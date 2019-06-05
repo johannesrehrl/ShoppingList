@@ -1,7 +1,6 @@
 package dev.ahwii.shoppinglist.models;
 
 import javax.persistence.*;
-import java.time.Instant;
 import java.util.Date;
 
 
@@ -22,11 +21,6 @@ public class User {
     private java.util.Date create_time;
 
     private Integer household_id;
-
-    public User() {
-        this.create_time = Date.from(Instant.now());
-    }
-
 
     @Override
     public String toString() {
