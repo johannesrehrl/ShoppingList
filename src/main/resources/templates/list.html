@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<th:block th:include="head.html :: head"></th:block>
+	<body>
+	<form>
+		<h1>Einkaufsliste erstellen</h1>
+		<h2>Einkaufslistenname:</h2>
+		<input type="text" name="text_listname">
+		<h2>Erstelldatum:</h2>
+		<input type="date" name="date">
+		<h2>Bemerkung:</h2>
+		<input type="text" name="text_comment">
+		<h2>Artikelsuche:</h2>
+		<input type="text" name="text_itemsearch">
+		
+		<button type="button" name ="button1" value="create">Erstellen</button>
+		<button type="button" name ="button2" value="edit">Bearbeiten</button>
+		<button type="button" name ="button3" value="delete">Loeschen</button>
+    </form>
+    </body>
+</head>
+</html>
