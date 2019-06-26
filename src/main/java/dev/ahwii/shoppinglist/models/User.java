@@ -18,7 +18,7 @@ public class User {
 
     @Basic
     @Temporal(TemporalType.TIMESTAMP)
-    private java.util.Date create_time;
+    private java.util.Date create_time;//TODO: Fix naming
 
     private Integer household_id;
 

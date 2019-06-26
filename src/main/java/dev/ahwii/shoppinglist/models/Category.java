@@ -3,27 +3,26 @@ package dev.ahwii.shoppinglist.models;
 import javax.persistence.*;
 import java.util.Date;
 
-@Table(name = "household")
+@Table(name = "category")
 @Entity
-public class Household {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer houshold_id;//TODO: Fix naming
+    private Integer category_id;
 
     private String name;
-
 
     @Basic
     @Temporal(TemporalType.TIMESTAMP)
     private java.util.Date created_at;
 
-    public Integer getHoushold_id() {
-        return houshold_id;
+    public Integer getCategory_id() {
+        return category_id;
     }
 
-    public void setHoushold_id(Integer houshold_id) {
-        this.houshold_id = houshold_id;
+    public void setCategory_id(Integer category_id) {
+        this.category_id = category_id;
     }
 
     public String getName() {
